@@ -1,0 +1,8 @@
+﻿
+=================================== ApplicationDbContext ===========================
+
+Enable-Migrations -ContextTypeName ApplicationDbContext -MigrationsDirectory Migrations\Identity
+
+add-migration -ConfigurationTypeName CodeFirstDevelopment.Migrations.Identity.Configuration "InitialIdentity"
+
+update-database -ConfigurationTypeName CodeFirstDevelopment.Migrations.Identity.Configuration
